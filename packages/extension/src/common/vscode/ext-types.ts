@@ -1341,6 +1341,13 @@ export interface OutputChannel {
   appendLine(value: string): void;
 
   /**
+   * Replaces all output from the channel with the given value.
+   *
+   * @param value A string, falsy values will not be printed.
+   */
+  replace(value: string): void;
+
+  /**
    * Removes all output from the channel.
    */
   clear(): void;
